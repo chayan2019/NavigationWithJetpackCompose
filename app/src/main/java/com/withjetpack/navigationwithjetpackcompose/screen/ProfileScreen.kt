@@ -15,7 +15,7 @@ import androidx.navigation.NavHostController
 import com.withjetpack.navigationwithjetpackcompose.utils.NavigationScreen
 
 @Composable
-fun HomeScreen(navController: NavHostController) {
+fun ProfileScreen(navController: NavHostController) {
 
     Column(
         modifier = Modifier
@@ -25,16 +25,10 @@ fun HomeScreen(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(onClick = {
-            navController.navigate(NavigationScreen.Detailscreen.createRoute("Hello"))
+            navController.navigateUp()
         }) {
-            Text(text = "Home Screen")
+            Text(text = "Profile Screen")
         }
     }
-
-}
-
-@Composable
-@Preview
-fun HomeScreenPreview() {
 
 }

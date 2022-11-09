@@ -13,6 +13,7 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.withjetpack.navigationwithjetpackcompose.navigation.NavigationController
 import com.withjetpack.navigationwithjetpackcompose.ui.theme.NavigationWithJetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    DetailScreen()
+                    NavigationController()
                 }
             }
         }
